@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
+    <meta charset="UTF-8">
 
     <style>
 
@@ -16,20 +17,24 @@
 
     <h1>Magisk kalkulator</h1>
 
-    <p>Oppgaver til 04.09, Linn Siri 3MKB</p>
+    <p>Oppgaver til 04.09, Linn Siri 3MKB <br> Areal og omkrets av rektangle kalkulator</p>
+
+    <article>
+
+        <img src="Bilder/Dogger.jpg" height="1129" width="1113"/>
+
+    </article>
 
 <script>
 
     console.log("Linn Siri");
 
-    var tall = Number(prompt("Skriv inn høyde"));
-    var tall2 = Number(prompt("Skriv inn bredde"));
+    var lengde = Number(prompt("Skriv inn høyde i cm"));
+    var høyde = Number(prompt("Skriv inn bredde i cm"));
+    var areal = lengde * høyde;
+    var omkrets = 2 * (lengde + høyde);
 
-    var sum = tall * tall2;
-
-    alert("summen av tallene er " + sum);
-
-
+    alert("Arealet er " + areal + " og omkretsen er " + omkrets);
 
 </script>
 
