@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Billett priser</title>
+</head>
+<body>
+
+    <h1>Billett priser</h1>
+
+    <script>
+
+        var bilettpris = prompt("Hva slags billett skal du ha?");
+        switch (bilettpris) {
+            case"barn":
+            case"Barn":
+            case"BARN":
+            case"Pensjonist":
+            case"pensjonist":
+            case"PENSJONIST":
+                document.write("Billett koster 20kr for barn og pensjonister");
+                break;
+            case"ungdom":
+            case"Ungdom":
+            case"UNGDOM":
+                document.write("Billett koster 25kr for ungdom");
+                break;
+            case"voksen":
+            case"Voksen":
+            case"VOKSEN":
+                document.write("Billett koster 30kr for voksne");
+                break;
+            default:
+                document.write("Skriv inn billett type");
+        }
+
+    </script>
+
+</body>
+</html>

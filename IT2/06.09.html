@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Enkel Kalkulator</title>
+</head>
+<body>
+
+    <input id="inpTall" type "number" placeholder="Skriv inn tallet ditt">
+    <input id="inpTall2" type "number" placeholder="Skriv inn tallet ditt">
+    <span id="spnResultat"></span>
+    <button id="btnRegnUt">Regn Ut</button>
+
+
+
+    <script>
+
+    var inpTall = document.getElementById("inpTall");
+    var spnResultat = document.getElementById("spnResultat");
+    var btnRegnUt = document.getElementById("btnRegnUt");
+
+    //console.log(inpTall.value);
+    //spnResultat.innerHTML(inpTall.value);
+
+
+    btnRegnUt.onclick = function () {
+    spnResultat.innerHTML = Number(inpTall.value) + Number(inpTall2.value);
+    }
+
+
+    </script>
+</body>
+</html>

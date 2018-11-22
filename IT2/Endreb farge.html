@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Farge bytting</title>
+</head>
+<body>
+   <h3>Magic Color Button:</h3>
+    <input id="inpFarge" type="Color">
+
+<script>
+
+     var inpFarge = document.getElementById("inpFarge");
+     /*inpFarge.onkeyup = function(){
+         document.body.style.backgroundColor = inpFarge.value;
+
+     };*/
+
+     inpFarge.onchange = function () {
+     document.body.style.backgroundColor = inpFarge.value
+     };
+
+    //document.body.style.backgroundColor
+
+
+</script>
+
+</body>
+</html>

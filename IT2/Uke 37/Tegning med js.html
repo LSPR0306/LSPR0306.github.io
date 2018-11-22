@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tegning med Javascriot</title>
+
+    <style>
+        canvas{
+            border: solid; /* lager en ramme rudnt lerretet */
+        }
+    </style>
+
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="600">
+        Beklager nettleseren din støtter ikke canvas-elementer.
+    </canvas>
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        //ctx.fillRect(x,y,bredde,høyde);
+        ctx.fillRect(100,100,200,300);
+
+        ctx.fillStyle = "orange";
+        ctx.fillRect(50,350,150,200);
+
+        ctx.strokeRect(500,50,75,75);
+    </script>
+
+</body>
+</html>

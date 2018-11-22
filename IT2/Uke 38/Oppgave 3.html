@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rovdyr</title>
+</head>
+<body>
+
+    <h1>Rovdyr i Norge</h1>
+
+    <script>
+
+        var rovdyr = prompt("Skriv inn et rovdyr");
+        switch (rovdyr) {
+            case"Ulv":
+            case"ulv":
+            case"ULV":
+                document.write("Antall ulver i Norge: 33");
+                document.body.style.backgroundColor= "red";
+                break;
+            case"Jerv":
+            case"jerv":
+            case"JERV":
+                document.write("Antall jerv i Norge: 343");
+                document.body.style.backgroundColor= "blue";
+                break;
+            case"Bjørn":
+            case"bjørn":
+            case"BJØRN":
+                document.write("Antall bjørn i Norge: 137");
+                document.body.style.backgroundColor= "pink";
+                break;
+            case"Gaupe":
+            case"gaupe":
+            case"GAUPE":
+                document.write("Antall gaupe i Norge: 350");
+                document.body.style.backgroundColor= "lightgreen";
+            default:
+                document.write("Animal not found");
+                document.body.style.backgroundColor= "green";
+        }
+
+    </script>
+
+</body>
+</html>

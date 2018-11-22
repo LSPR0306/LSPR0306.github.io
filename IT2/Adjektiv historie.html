@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Adjektiv historie</title>
+
+</head>
+<body>
+<input type="tekst" id="adjektiv1">
+<input type="tekst" id="adjektiv2">
+<input type="tekst" id="adjektiv3">
+<input type="tekst" id="adjektiv4">
+<input type="tekst" id="adjektiv5">
+<input type="tekst" id="adjektiv6">
+<input type="tekst" id="adjektiv7">
+<input type="tekst" id="adjektiv8">
+<input type="tekst" id="adjektiv9">
+<input type="tekst" id="adjektiv10">
+
+
+
+<script>
+
+
+
+    var adjektiv1 = document.getElementById("adjektiv1");
+    var adjektiv2 = document.getElementById("adjektiv2");
+    var adjektiv3 = document.getElementById("adjektiv3");
+    var adjektiv4 = document.getElementById("adjektiv4");
+    var adjektiv5 = document.getElementById("adjektiv5");
+    var adjektiv6 = document.getElementById("adjektiv6");
+    var adjektiv7 = document.getElementById("adjektiv7");
+    var adjektiv8 = document.getElementById("adjektiv8");
+    var adjektiv9 = document.getElementById("adjektiv9");
+    var adjektiv10 = document.getElementById("adjektiv10");
+
+    var knapp = document.getElementById("knapp");
+
+    knapp.onclick = function () {
+        var historie = `En ${adjektiv1.value} vinterdag skulle den
+        ${adjektiv2.value} IT-klassen på overnattingstur.  Alle de ${adjektiv3.value} elevene hadde
+        med seg langrennsski, soveposer og en ${adjektiv4.value} sekk med mat og varmt tøy.
+        Alle gledet seg til denne ${adjektiv5.value} turen. Kristine hadde på seg en
+        ${adjektiv6.value} ny lue, og den ${adjektiv7.value} Tormod hadde på seg en ${adjektiv8.value} jakke.
+        Den ${adjektiv9.value} Anne og ${adjektiv10.value} Sabrina hadde nye langrennsski som de hadde fått til jul`;
+    document.write(historie);
+    };
+
+</script>
+
+
+</body>
+</html>

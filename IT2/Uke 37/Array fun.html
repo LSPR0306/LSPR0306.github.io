@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favoritt filmer</title>
+</head>
+<body>
+
+<input id="inputFelt" type="text" placeholder="skriv inn ny film">
+
+<button id="knapp">Klikk her</button>
+
+    <script>
+
+        var filmListe = ["The Fall", "Snowpiercer", "Avengers", "Sjørøverplaneten", "2001: A space odyssey"];
+
+        var knapp = document.getElementById("knapp");
+
+        var inputFelt = document.getElementById("inputFelt");
+
+        knapp.onclick = () => {
+            document.write(filmListe[2])
+            filmListe.push(inputFelt.value);
+            console.log(filmListe);
+        };
+
+    </script>
+
+</body>
+</html>

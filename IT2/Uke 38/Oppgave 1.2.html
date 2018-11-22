@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobil merke switch setning</title>
+</head>
+<body>
+
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+
+    <script>
+
+        var mobil = prompt("Hvilken mobil har du?");
+        switch (mobil) {
+            case"Samsung":
+            case"samsung":
+            case"SAMSUNG":
+                document.write("Bra valg");
+                document.body.style.backgroundColor= "blue";
+                break;
+            case"Nokia":
+            case"nokia":
+            case"NOKIA":
+                document.write("Velkommen til fremtiden");
+                document.body.style.backgroundColor= "red";
+                break;
+            case"iPhone":
+            case"iphone":
+            case"IPHONE":
+            case"Iphone":
+                document.write("Du har penger å bruke");
+                document.body.style.backgroundColor= "pink";
+                break;
+            case"Sony Ericsson":
+            case"sony ericsson":
+            case"SONY ERICSSON":
+                document.write("Er du fra 2010");
+                document.body.style.backgroundColor= "green";
+                break;
+            default:
+                document.write("Velkommen til 2018")
+                document.body.style.backgroundColor= "lightgreen";
+        }
+
+    </script>
+
+</body>
+</html>

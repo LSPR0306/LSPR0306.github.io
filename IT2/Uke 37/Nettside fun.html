@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firkant følger mus</title>
+
+    <style>
+
+        #firkant{
+            background-color: #8b1c3e;
+            height: 50px;
+            width: 50px;
+            margin-left: 40px;
+            margin-top: 50px;
+            border-radius: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <img src="../Bilder/HEY%20VSAUCE.png" id="firkant"></img>
+
+    <script>
+
+        var firkant = document.getElementById("firkant");
+
+        document.onmousemove = function () {
+            var x = event.clientX;
+            var y = event.clientY;
+            console.log("x= " + x);
+            console.log("y= " + y);
+
+            firkant.style.marginLeft = x + "px";
+            firkant.style.marginTop = y + "px";
+        }
+
+    </script>
+
+
+</body>
+</html>

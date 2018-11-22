@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppg. 1</title>
+</head>
+<body>
+
+        <input type="number" id "inputFelt">
+        <div id="losning"></div>
+
+    <script>
+
+        const inputFelt = document.getElementById("inputFelt");
+        const losning = document.getElementById("losning");
+
+
+        inputFelt.oninput = function () {
+            if(inputFelt.value > 0){
+                losning.innerHTML = "større enn 0";
+            }
+            else if(inputFelt.value == 0){
+                losning.innerHTML = ("Mindre enn 0")
+            }
+        }
+    </script>
+
+</body>
+</html>
