@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppg.5</title>
+</head>
+<body>
+
+<ul id="tallListe">
+
+</ul>
+
+<script>
+
+    let tallListe = document.getElementById("tallListe");
+    let tall = [2,1,4,5,3];
+
+    tall.sort(function(a, b){return a - b});
+
+    for(let listeTall of tall){
+        console.log(listeTall);
+        tallListe.innerHTML += "<li>" + listeTall + "</li>";
+    }
+
+
+</script>
+
+</body>
+</html>
