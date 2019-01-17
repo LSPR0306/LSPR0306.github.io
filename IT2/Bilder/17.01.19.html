@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17.01.19 Oppg.1</title>
+</head>
+<body>
+
+
+<ul id="handleListe">
+
+</ul>
+
+<script>
+
+    let handleListe = document.getElementById("handleListe");
+    let varer = ["Ost","brød","paprika","kaviar"];
+
+    varer.unshift("melk");
+
+    varer.pop();
+
+    varer.splice(2,1,"Knekkebrød");
+
+    for(let vareliste of varer){
+        console.log(vareliste);
+        handleListe.innerHTML += "<li>" + vareliste + "</li>";
+    }
+</script>
+
+</body>
+</html>
