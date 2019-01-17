@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppg. 2</title>
+</head>
+<body>
+
+<ul id="treListe">
+
+</ul>
+
+<script>
+
+    let treListe = document.getElementById("treListe");
+    let traer = ["lønn","hassel","bjørk","eik","blodlønn","furu","gran"];
+
+    traer.splice(3,1);
+
+    traer.splice(2,1,"hengebjørk");
+
+    traer.splice(4,2);
+
+    traer.push("fjellbjørk");
+
+    traer.push("dvergbjørk");
+
+    traer.sort();
+
+    for(let tresorter of traer){
+        console.log(tresorter);
+        treListe.innerHTML += "<li>" + tresorter + "</li>";
+    }
+
+</script>
+
+</body>
+</html>
